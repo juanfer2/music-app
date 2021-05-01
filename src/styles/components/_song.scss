@@ -1,0 +1,86 @@
+.song-container {
+  .card-container {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    .card-song {
+      padding: 5px;
+      border-radius: 15px;
+      background: var(--white);
+      max-width: 600px;
+      max-height: 600px;
+      box-shadow: 10px 10px 16px var(--shadow-dark),
+        -6px -6px 16px var(--shadow-light);
+
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+    margin: 7px;
+
+    .description {
+      text-align: center;
+      grid-column: 2 / 3;
+
+      .title {
+        color: var(--secondary);
+        margin-bottom: 5px;
+      }
+
+      .subtitle {
+        font-weight: 300;
+      }
+    }
+
+    .more {
+      text-align: right;
+      margin-top: 30px;
+      .icons {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .reproductor {
+    .container-reproductor {
+      text-align: center;  
+      margin: 17px;
+
+      .time {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        span {
+          font-size: 12px;
+        }
+      }
+
+      .bar-progress {
+        height: 10px;
+        width: 100%;
+        background: var(--white);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: inset 2px 2px 1px var(--shadow-dark),
+          inset -1px -1px 1px var(--shadow-light);
+
+        .bar-progress-medidor {
+          z-index: 2;
+          height: 10px;
+          width: 20%;
+          background: var(--secondary);
+          border-radius: 8px;
+          transform: translateX(0vw);
+        }
+      }
+    }
+  }
+}

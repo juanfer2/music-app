@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Ubuntu:ital@0;1&display=swap');
+//font-family: 'Roboto', sans-serif;
+//font-family: 'Ubuntu', sans-serif;
+
+:root {
+  --white: #EDF3FB;
+  --primary: #7395c4;
+  --secondary: #FF4B2B;
+  --shadow-dark: #A9BEDB;
+  --shadow-light: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+
