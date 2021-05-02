@@ -165,6 +165,31 @@ button {
   }
 }
 
+.container-navbar {
+  position: relative;
+}
+
+.container-navbar .navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--white);
+}
+
+.container-navbar .navbar .navbar-container-items {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-navbar .navbar .navbar-container-items .items {
+  cursor: pointer;
+}
+
 .song-container .card-container {
   display: -ms-grid;
   display: grid;

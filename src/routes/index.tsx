@@ -6,10 +6,12 @@ import Song from '../components/song'
 
 function Routes() {
   return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/song" component={Song} />
-    </Switch>
+    <div className="content">
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/song" component={Song} />
+      </Switch>
+    </div>
   )
 }
 

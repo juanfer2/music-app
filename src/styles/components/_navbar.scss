@@ -1,0 +1,19 @@
+.container-navbar {
+  position: relative;
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--white);
+
+    .navbar-container-items {
+      margin: 15px;
+      display: flex;
+      justify-content: space-between;
+
+      .items {
+        cursor: pointer;
+      }
+    }
+  }
+}
