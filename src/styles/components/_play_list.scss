@@ -1,0 +1,36 @@
+.play-list {
+  
+  .song-container {
+    text-align: center;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      max-width: 400px;
+    }
+  }
+
+  .song-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+
+    .song-info {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .song-actions {
+      margin-top: 20px;
+      width: 150px;
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+      }
+    }
+  }
+}

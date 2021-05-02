@@ -16,6 +16,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
+  color: var(--secondary);
 }
 
 .card {
@@ -23,8 +24,8 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--white);
   max-width: 600px;
   border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 16px var(--shadow-dark), -6px -6px 16px var(--shadow-light);
-          box-shadow: 10px 10px 16px var(--shadow-dark), -6px -6px 16px var(--shadow-light);
+  -webkit-box-shadow: 10px 10px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+          box-shadow: 10px 10px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
 }
 
 .play-list-card-container {
@@ -112,15 +113,18 @@ button {
               -4px -4px 8px var(--shadow-light);
 }
 */
-.button-actions-container {
-  max-width: 600px;
+.button-actions {
+  text-align: -webkit-center;
+  margin: 60px;
+}
+
+.button-actions .button-actions-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 60px;
-  text-align: center;
+  max-width: 600px;
 }
 
 .btn {
@@ -210,6 +214,8 @@ button {
 }
 
 .song-container .card-container .card-song img {
+  width: 300px;
+  max-width: 400px;
   border-radius: 15px;
 }
 
@@ -284,5 +290,93 @@ button {
   border-radius: 8px;
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
+}
+
+.play-list .song-container {
+  text-align: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+.play-list .song-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.play-list .song-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px;
+}
+
+.play-list .song-content .song-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.play-list .song-content .song-actions {
+  margin-top: 20px;
+  width: 150px;
+}
+
+.play-list .song-content .song-actions .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+
+.list-songs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 0.5fr 1fr 1fr;
+      grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+  justify-items: center;
+  margin: 15px;
+}
+
+.list-songs .number {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 17px;
+}
+
+.list-songs img {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.list-songs .song-info .title {
+  margin-top: unset;
+  margin-bottom: unset;
+}
+
+.list-songs .time {
+  margin-top: 20px;
+}
+
+.active {
+  background: var(--white);
+  padding: 5px;
+  border-radius: 17px;
+  -webkit-box-shadow: 10px 10px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+          box-shadow: 10px 10px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
 }
 /*# sourceMappingURL=main.css.map */

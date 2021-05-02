@@ -6,13 +6,18 @@ button {
               -4px -4px 8px var(--shadow-light);
 }
 */
-
-.button-actions-container {
-  max-width: 600px;
-  display: flex;
-  justify-content: space-around;
+.button-actions {
+  text-align: -webkit-center;
   margin:60px;
-  text-align: center;
+  .button-actions-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    
+
+  
+    
+  }
 }
 
 .btn{

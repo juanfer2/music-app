@@ -1,19 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar () {
   return (
     <div className="container-navbar">
       <div className="navbar">
         <div className="navbar-container-items">
-          <span className="material-icons">
-            favorite_border
-          </span>
-          <span className="material-icons items">
-            repeat
-          </span>
-          <span className="material-icons items">
-            shuffle
-          </span>
+          <Link to="/">
+            <span className="material-icons">
+              favorite_border
+            </span>
+          </Link>
+          <Link to="/song">
+            <span className="material-icons items">
+              repeat
+            </span>
+          </Link>
+          <Link to="/play_list">
+            <span className="material-icons items">
+              shuffle
+            </span>
+          </Link>
+
           <span className="material-icons items">
             add
           </span>
