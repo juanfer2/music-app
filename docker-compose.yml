@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  samples:
+    container_name: music-react
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    
+    ports:
+      - '3001:3001'
+
+    environment:
+      SKIP_PREFLIGHT_CHECK: "true"
+      REACT_APP_ENVIROMENT: "DEVELOPMENT"
+      REACT_APP_API_URL: "API_URL"
+      REACT_APP_API_GRAPHQL_URL: "API_GRAPHQL_URL"
+
