@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   node: circleci/node@1.1
 jobs:
-  build:
+  test:
     executor:
       name: node/default
       tag: '10.4'
@@ -12,3 +12,6 @@ jobs:
           steps:
             - run: npm install
       - run: npm run test 
+    environment:
+      SKIP_PREFLIGHT_CHECK: "true"
+      REACT_APP_ENVIROMENT: "test"
