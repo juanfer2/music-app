@@ -13,6 +13,5 @@ jobs:
             - run: npm install
       - run: npm run test 
     environment:
-      SKIP_PREFLIGHT_CHECK: "true"
-      REACT_APP_ENVIROMENT: "test"
-    #parallelism: 3
+      SKIP_PREFLIGHT_CHECK: 'true'
+      REACT_APP_ENVIROMENT: 'test'
