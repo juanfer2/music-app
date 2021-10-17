@@ -14,8 +14,10 @@ jobs:
                 name: Install node modules
                 command: npm install
       - run:
-          name: Tests
+          name: Run Tests
           command: npm test
     environment:
       SKIP_PREFLIGHT_CHECK: 'true'
       REACT_APP_ENVIROMENT: 'test'
+    parallelism: 3
+    
