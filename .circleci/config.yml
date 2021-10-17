@@ -11,11 +11,11 @@ jobs:
       - node/with-cache:
           steps:
             - run:
-              name: Install node modules
-              command: npm install
+                name: Install node modules
+                command: npm install
       - run:
-        name: Tests
-        command: npm test
+          name: Tests
+          command: npm test
     environment:
       SKIP_PREFLIGHT_CHECK: 'true'
       REACT_APP_ENVIROMENT: 'test'
