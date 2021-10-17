@@ -10,8 +10,12 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: npm install
-      - run: npm run test
+            - run:
+              name: Install node modules
+              command: npm install
+      - run:
+        name: Tests
+        command: npm test
     environment:
       SKIP_PREFLIGHT_CHECK: 'true'
       REACT_APP_ENVIROMENT: 'test'
